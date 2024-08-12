@@ -1,0 +1,42 @@
+{
+    "sourceFile": "main.py",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 6,
+            "patches": [
+                {
+                    "date": 1723458888836,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1723458918419,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,6 +6,5 @@\n \r\n WIN_WIDTH = 600\r\n WIN_HEIGHT = 800\r\n \r\n-BIRDS_IMGS = [pygame.transform.scale2x(pygame.image.load(os.path.join(\"imgs, bird1.png\")))], [pygame.transform.scale2x(pygame.image.load(os.path.join(\"imgs, bird2.png\")))], [pygame.transform.scale2x(pygame.image.load(os.path.join(\"imgs, bird3.png\")))]\r\n-\r\n+BIRDS_IMGS = [pygame.transform.scale2x(pygame.image.load(os.path.join(\"imgs, bird1.png\")))], [pygame.transform.scale2x(pygame.image.load(os.path.join(\"imgs, bird2.png\")))], [pygame.transform.scale2x(pygame.image.load(os.path.join(\"imgs, bird3.png\")))]\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1723458925269,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,5 +6,6 @@\n \r\n WIN_WIDTH = 600\r\n WIN_HEIGHT = 800\r\n \r\n+\r\n BIRDS_IMGS = [pygame.transform.scale2x(pygame.image.load(os.path.join(\"imgs, bird1.png\")))], [pygame.transform.scale2x(pygame.image.load(os.path.join(\"imgs, bird2.png\")))], [pygame.transform.scale2x(pygame.image.load(os.path.join(\"imgs, bird3.png\")))]\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1723459214618,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,5 +7,5 @@\n WIN_WIDTH = 600\r\n WIN_HEIGHT = 800\r\n \r\n \r\n-BIRDS_IMGS = [pygame.transform.scale2x(pygame.image.load(os.path.join(\"imgs, bird1.png\")))], [pygame.transform.scale2x(pygame.image.load(os.path.join(\"imgs, bird2.png\")))], [pygame.transform.scale2x(pygame.image.load(os.path.join(\"imgs, bird3.png\")))]\n\\ No newline at end of file\n+BIRDS_IMGS = [pygame.transform.scale2x(pygame.image.load(os.path.join(\"imgs, bird1.png\")))], [pygame.transform.scale2x(pygame.image.load(os.path.join(\"imgs, bird2.png\")))], [pygame.transform.scale2x(pygame.image.load(os.path.join(\"imgs, bird3.png\")))]\r\n"
+                },
+                {
+                    "date": 1723459237982,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,4 +8,5 @@\n WIN_HEIGHT = 800\r\n \r\n \r\n BIRDS_IMGS = [pygame.transform.scale2x(pygame.image.load(os.path.join(\"imgs, bird1.png\")))], [pygame.transform.scale2x(pygame.image.load(os.path.join(\"imgs, bird2.png\")))], [pygame.transform.scale2x(pygame.image.load(os.path.join(\"imgs, bird3.png\")))]\r\n+PIPE\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1723459243825,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,5 +8,5 @@\n WIN_HEIGHT = 800\r\n \r\n \r\n BIRDS_IMGS = [pygame.transform.scale2x(pygame.image.load(os.path.join(\"imgs, bird1.png\")))], [pygame.transform.scale2x(pygame.image.load(os.path.join(\"imgs, bird2.png\")))], [pygame.transform.scale2x(pygame.image.load(os.path.join(\"imgs, bird3.png\")))]\r\n-PIPE.\n\\ No newline at end of file\n+PIPE.IM\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1723459307088,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,4 +9,5 @@\n \r\n \r\n BIRDS_IMGS = [pygame.transform.scale2x(pygame.image.load(os.path.join(\"imgs, bird1.png\")))], [pygame.transform.scale2x(pygame.image.load(os.path.join(\"imgs, bird2.png\")))], [pygame.transform.scale2x(pygame.image.load(os.path.join(\"imgs, bird3.png\")))]\r\n PIPE_IMG = [pygame.transform.scale2x(pygame.image.load(os.path.join(\"imgs, pipe.png\")))]\r\n+PIPE_IMG = [pygame.transform.scale2x(pygame.image.load(os.path.join(\"imgs, pipe.png\")))]\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1723458888836,
+            "name": "Commit-0",
+            "content": "import pygame\r\nimport neat\r\nimport time\r\nimport os\r\nimport random\r\n\r\nWIN_WIDTH = 600\r\nWIN_HEIGHT = 800\r\n\r\nBIRDS_IMGS = [pygame.transform.scale2x(pygame.image.load(os.path.join(\"imgs, bird1.png\")))], [pygame.transform.scale2x(pygame.image.load(os.path.join(\"imgs, bird2.png\")))], [pygame.transform.scale2x(pygame.image.load(os.path.join(\"imgs, bird3.png\")))]\r\n\r\n"
+        }
+    ]
+}

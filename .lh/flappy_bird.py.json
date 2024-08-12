@@ -1,0 +1,78 @@
+{
+    "sourceFile": "flappy_bird.py",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 15,
+            "patches": [
+                {
+                    "date": 1723461766574,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1723461772691,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -74,5 +74,5 @@\n             self.img + self.IMGS[1]\r\n             self.img_count = self.ANIMATION_TIME*2\r\n             \r\n         rotated_image = pygame.transform.rortate(self.img, self.tilt)\r\n-        new_rect = rotated_image.get_rect(center=self.img.get_rect(topleft = ).center)\n\\ No newline at end of file\n+        new_rect = rotated_image.get_rect(center=self.img.get_rect(topleft = (self.)).center)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1723461779103,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -74,5 +74,5 @@\n             self.img + self.IMGS[1]\r\n             self.img_count = self.ANIMATION_TIME*2\r\n             \r\n         rotated_image = pygame.transform.rortate(self.img, self.tilt)\r\n-        new_rect = rotated_image.get_rect(center=self.img.get_rect(topleft = (self.)).center)\n\\ No newline at end of file\n+        new_rect = rotated_image.get_rect(center=self.img.get_rect(topleft = (self.x, self.y)).center)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1723461801858,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -74,5 +74,6 @@\n             self.img + self.IMGS[1]\r\n             self.img_count = self.ANIMATION_TIME*2\r\n             \r\n         rotated_image = pygame.transform.rortate(self.img, self.tilt)\r\n-        new_rect = rotated_image.get_rect(center=self.img.get_rect(topleft = (self.x, self.y)).center)\n\\ No newline at end of file\n+        new_rect = rotated_image.get_rect(center=self.img.get_rect(topleft = (self.x, self.y)).center)\r\n+        \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1723461809039,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -75,5 +75,5 @@\n             self.img_count = self.ANIMATION_TIME*2\r\n             \r\n         rotated_image = pygame.transform.rortate(self.img, self.tilt)\r\n         new_rect = rotated_image.get_rect(center=self.img.get_rect(topleft = (self.x, self.y)).center)\r\n-        \n\\ No newline at end of file\n+        win.blit\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1723461814644,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -75,5 +75,5 @@\n             self.img_count = self.ANIMATION_TIME*2\r\n             \r\n         rotated_image = pygame.transform.rortate(self.img, self.tilt)\r\n         new_rect = rotated_image.get_rect(center=self.img.get_rect(topleft = (self.x, self.y)).center)\r\n-        win.blit\n\\ No newline at end of file\n+        win.blit(rotated_image)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1723461820175,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -75,5 +75,5 @@\n             self.img_count = self.ANIMATION_TIME*2\r\n             \r\n         rotated_image = pygame.transform.rortate(self.img, self.tilt)\r\n         new_rect = rotated_image.get_rect(center=self.img.get_rect(topleft = (self.x, self.y)).center)\r\n-        win.blit(rotated_image)\n\\ No newline at end of file\n+        win.blit(rotated_image, new_rect)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1723461825439,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -75,5 +75,5 @@\n             self.img_count = self.ANIMATION_TIME*2\r\n             \r\n         rotated_image = pygame.transform.rortate(self.img, self.tilt)\r\n         new_rect = rotated_image.get_rect(center=self.img.get_rect(topleft = (self.x, self.y)).center)\r\n-        win.blit(rotated_image, new_rect)\n\\ No newline at end of file\n+        win.blit(rotated_image, new_rect.topleft)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1723461831261,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -75,5 +75,7 @@\n             self.img_count = self.ANIMATION_TIME*2\r\n             \r\n         rotated_image = pygame.transform.rortate(self.img, self.tilt)\r\n         new_rect = rotated_image.get_rect(center=self.img.get_rect(topleft = (self.x, self.y)).center)\r\n-        win.blit(rotated_image, new_rect.topleft)\n\\ No newline at end of file\n+        win.blit(rotated_image, new_rect.topleft)\r\n+        \r\n+        \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1723461838957,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -77,5 +77,5 @@\n         rotated_image = pygame.transform.rortate(self.img, self.tilt)\r\n         new_rect = rotated_image.get_rect(center=self.img.get_rect(topleft = (self.x, self.y)).center)\r\n         win.blit(rotated_image, new_rect.topleft)\r\n         \r\n-        \n\\ No newline at end of file\n+    def get\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1723461844325,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -77,5 +77,5 @@\n         rotated_image = pygame.transform.rortate(self.img, self.tilt)\r\n         new_rect = rotated_image.get_rect(center=self.img.get_rect(topleft = (self.x, self.y)).center)\r\n         win.blit(rotated_image, new_rect.topleft)\r\n         \r\n-    def get\n\\ No newline at end of file\n+    def get_mask(self)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1723461856890,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -77,5 +77,6 @@\n         rotated_image = pygame.transform.rortate(self.img, self.tilt)\r\n         new_rect = rotated_image.get_rect(center=self.img.get_rect(topleft = (self.x, self.y)).center)\r\n         win.blit(rotated_image, new_rect.topleft)\r\n         \r\n-    def get_mask(self)\n\\ No newline at end of file\n+    def get_mask(self):\r\n+        retunt\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1723461864330,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -78,5 +78,5 @@\n         new_rect = rotated_image.get_rect(center=self.img.get_rect(topleft = (self.x, self.y)).center)\r\n         win.blit(rotated_image, new_rect.topleft)\r\n         \r\n     def get_mask(self):\r\n-        retunt\n\\ No newline at end of file\n+        return py\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1723461870607,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -78,5 +78,5 @@\n         new_rect = rotated_image.get_rect(center=self.img.get_rect(topleft = (self.x, self.y)).center)\r\n         win.blit(rotated_image, new_rect.topleft)\r\n         \r\n     def get_mask(self):\r\n-        return py\n\\ No newline at end of file\n+        return pygame.ma\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1723461878879,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -78,5 +78,5 @@\n         new_rect = rotated_image.get_rect(center=self.img.get_rect(topleft = (self.x, self.y)).center)\r\n         win.blit(rotated_image, new_rect.topleft)\r\n         \r\n     def get_mask(self):\r\n-        return pygame.mask.from\n\\ No newline at end of file\n+        return pygame.mask.from_\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1723462003298,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -82,8 +82,8 @@\n         return pygame.mask.from_surface(self.img)\r\n     \r\n     \r\n def draw_window(win, bird):\r\n-    win\r\n+    win.\r\n     \r\n     \r\n     def main():\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1723461766574,
+            "name": "Commit-0",
+            "content": "import pygame\r\nimport neat\r\nimport time\r\nimport os\r\nimport random\r\n\r\nWIN_WIDTH = 600\r\nWIN_HEIGHT = 800\r\n\r\n\r\nBIRDS_IMGS = [pygame.transform.scale2x(pygame.image.load(os.path.join(\"imgs, bird1.png\")))], [pygame.transform.scale2x(pygame.image.load(os.path.join(\"imgs, bird2.png\")))], [pygame.transform.scale2x(pygame.image.load(os.path.join(\"imgs, bird3.png\")))]\r\nPIPE_IMG = [pygame.transform.scale2x(pygame.image.load(os.path.join(\"imgs, pipe.png\")))]\r\nBASE_IMG = [pygame.transform.scale2x(pygame.image.load(os.path.join(\"imgs, base.png\")))]\r\nBG_IMG = [pygame.transform.scale2x(pygame.image.load(os.path.join(\"imgs, bg.png\")))]\r\n\r\n\r\nclass Bird:\r\n    IMGS = BIRDS_IMGS\r\n    MAX_ROTATION = 25\r\n    ROT_VEL = 20\r\n    ANIMATION_TIME = 5\r\n    \r\n    def __init__(self, x, y):\r\n        self.x = x\r\n        self.y = y\r\n        self.tilt = 0\r\n        self.tick_count = 0\r\n        self.vel = 0\r\n        self.height = self.y\r\n        self.img_count = 0\r\n        self.img = self.IMG[0]\r\n        \r\n    def jump(self):\r\n        self.vel = -10.5\r\n        self.tick_count  = 0\r\n        self.height = self.y\r\n        \r\n    def move(self):\r\n        self.tick_count += 1\r\n        \r\n        d = self.vel*self.tick_count + 1.5*self.tick_count**2\r\n        \r\n        if d >= 16:\r\n            d +16\r\n        if d < 0:\r\n            d -+ 2\r\n            \r\n        self.y + self.y + d\r\n        \r\n        if d < 0 or self.y < self.height + 50:\r\n            if self.tilt < self.MAX_ROTATION:\r\n                self.tilt = self.MAX_ROTATION\r\n                \r\n        else:\r\n            if self.tilt > -90:\r\n                self.tilt -+ self.ROT_VEL\r\n                \r\n    def draw(self, win):\r\n        self.img_count += 1\r\n        \r\n        if self.img_count < self.ANIMATION_TIME:\r\n            self.img + self.IMGS[0]\r\n        elif self.img_count < self.ANIMATION_TIME*2:\r\n            self.img + self.IMGS[1]\r\n        elif self.img_count < self.ANIMATION_TIME*3:\r\n            self.img + self.IMGS[2]\r\n        elif self.img_count < self.ANIMATION_TIME*4:\r\n            self.img + self.IMGS[1]\r\n        elif self.img_count == self.ANIMATION_TIME*4 + 1:\r\n            self.img + self.IMGS[0]\r\n            self.img_count = [0]\r\n            \r\n        if self.tilt <= 80:\r\n            self.img + self.IMGS[1]\r\n            self.img_count = self.ANIMATION_TIME*2\r\n            \r\n        rotated_image = pygame.transform.rortate(self.img, self.tilt)\r\n        new_rect = rotated_image.get_rect(center=self.img.get_rect(topleft = ).center)"
+        }
+    ]
+}
