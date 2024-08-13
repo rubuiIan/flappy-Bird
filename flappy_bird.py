@@ -47,9 +47,9 @@ class Bird:
         if d >= 16:
             d = 16
         if d < 0:
-            d += 2
+            d -= 2
             
-        self.y + self.y + d
+        self.y = self.y + d
         
         if d < 0 or self.y < self.height + 50:
             if self.tilt < self.MAX_ROTATION:
@@ -70,13 +70,13 @@ class Bird:
             self.img = self.IMGS[2]
         elif self.img_count < self.ANIMATION_TIME*4:
             self.img = self.IMGS[1]
-        elif self.img_count == self.ANIMATION_TIME*4 :
+        elif self.img_count == self.ANIMATION_TIME*4 + 1 :
             self.img = self.IMGS[0]
             self.img_count = 0
             
-        if self.tilt <= 80:
+        if self.tilt <= -80:
             self.img = self.IMGS[1]
-            self.img_count = self.ANIMATION_TIME * 2
+            self.img_count = self.ANIMATION_TIME*2
             
         rotated_image = pygame.transform.rotate(self.img, self.tilt) 
         new_rect = rotated_image.get_rect(center=self.img.get_rect(topleft = (self.x, self.y)).center)
@@ -93,7 +93,7 @@ def draw_window(win, bird):
     
     
 def main():
-    pygame.init()
+    # pygame.init()
     bird = Bird(200,200)
     win = pygame.display.set_mode((WIN_WIDTH, WIN_HEIGHT))
        
