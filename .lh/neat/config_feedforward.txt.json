@@ -1,0 +1,18 @@
+{
+    "sourceFile": "neat/config_feedforward.txt",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1723722535957,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1723722535957,
+            "name": "Commit-0",
+            "content": "\r\n[NEAT]\r\nfitness_criterion     = max\r\nfitness_threshold     = 100\r\npop_size              = \r\nreset_on_extinction   = False\r\n\r\n[DefaultGenome]\r\n# node activation options\r\nactivation_default      = tanh\r\nactivation_mutate_rate  = 0.0\r\nactivation_options      = tanh\r\n\r\n# node aggregation options\r\naggregation_default     = sum\r\naggregation_mutate_rate = 0.0\r\naggregation_options     = sum\r\n\r\n# node bias options\r\nbias_init_mean          = 0.0\r\nbias_init_stdev         = 1.0\r\nbias_max_value          = 30.0\r\nbias_min_value          = -30.0\r\nbias_mutate_power       = 0.5\r\nbias_mutate_rate        = 0.7\r\nbias_replace_rate       = 0.1\r\n\r\n# genome compatibility options\r\ncompatibility_disjoint_coefficient = 1.0\r\ncompatibility_weight_coefficient   = 0.5\r\n\r\n# connection add/remove rates\r\nconn_add_prob           = 0.5\r\nconn_delete_prob        = 0.5\r\n\r\n# connection enable options\r\nenabled_default         = True\r\nenabled_mutate_rate     = 0.01\r\n\r\nfeed_forward            = True\r\ninitial_connection      = full\r\n\r\n# node add/remove rates\r\nnode_add_prob           = 0.2\r\nnode_delete_prob        = 0.2\r\n\r\n# network parameters\r\nnum_hidden              = 0\r\nnum_inputs              = 3\r\nnum_outputs             = 1\r\n\r\n# node response options\r\nresponse_init_mean      = 1.0\r\nresponse_init_stdev     = 0.0\r\nresponse_max_value      = 30.0\r\nresponse_min_value      = -30.0\r\nresponse_mutate_power   = 0.0\r\nresponse_mutate_rate    = 0.0\r\nresponse_replace_rate   = 0.0\r\n\r\n# connection weight options\r\nweight_init_mean        = 0.0\r\nweight_init_stdev       = 1.0\r\nweight_max_value        = 30\r\nweight_min_value        = -30\r\nweight_mutate_power     = 0.5\r\nweight_mutate_rate      = 0.8\r\nweight_replace_rate     = 0.1\r\n\r\n[DefaultSpeciesSet]\r\ncompatibility_threshold = 3.0\r\n\r\n[DefaultStagnation]\r\nspecies_fitness_func = max\r\nmax_stagnation       = 20\r\nspecies_elitism      = 2\r\n\r\n[DefaultReproduction]\r\nelitism            = 2\r\nsurvival_threshold = 0.2"
+        }
+    ]
+}
